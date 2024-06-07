@@ -1,43 +1,60 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Blog de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nosso Blog de Amor</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">Nossa História</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#mensagens">Mensagens</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo a minha homenagem</h2>
+        </section>
+        <section id="historia">
+            <h2>Nossa História</h2>
+            <p>Aqui começa a nossa linda história de amor. Em um belo dia, eu estava em um aplicativo de namoro chamado Happyn (acho que é assim que se escreve) e acabamos dando "match" kkkkkkkk. Nunca acreditei nessas coisas de amor e nunca coloquei todas as minhas expectativas, mas dessa vez foi diferente. Logo começamos a conversar, e como sempre, fiquei no vácuo uns 3 dias. Logo depois, ela me respondeu. De imediato, já peguei o WhatsApp dela para ela não ter para onde fugir. Sempre fui uma pessoa que gostou de conversar por ligação. A minha emoção foi essa: 03 dias de conversas e eu já estava fazendo ligações com ela. No primeiro fim de semana, lembro como se fosse ontem, era um sábado, às 14h00. Simplesmente, me deu na cabeça de ir vê-la, e eu fui. Paguei 38 reais de Uber Moto e ainda fui em uma POP110I. Quem conhece de moto sabe que uma viagem de Campinas até Americana de POP110I não é muito confortável kkkkkkkkkkkkkkkkk.</p>
+            <p>Nisso tudo, ela me disse: "Às 18h00 eu estarei no Tivoli Shopping." Concordei e cheguei lá às 17h00. Ela foi chegar às 19h30 (ela saiu do trabalho, foi para casa tomar banho para me encontrar). Era simples, só ir depois do trabalho, mas fiquei aguardando ela até o momento que chegou. O momento engraçado foi que ela chegou em um corredor que iria dar de cara comigo. Ela voltou só para "tentar" me dar um susto KKKKKKKKKKKKKKK. Fomos ver se tinha algum filme interessante e, obviamente, não tinha. Perguntei se ela queria comer algo e ela sempre dizendo não. Paramos para tomar um sorvete. Nisso, ela tinha comprado um relógio digital, mas não sabia configurá-lo (e aí entrou o TI aqui, né). Terminei de configurar e, quando ela pôs o relógio no pulso, ficou muito grande no braço dela KKKKKKKKKKKKKKK. Literalmente, ficou sambando no pulso dela. Ela ficou tristinha porque tinha gostado do relógio, mas logo depois comprou um reloginho que parecia aqueles relógios da Barbie, reloginho de criança. Obviamente, eu sempre a zoava quando via ela com aquele relógio.</p>
+            <p>Depois disso, fomos para fora do shopping, ficamos e eu gostei tanto que fiquei de cara. Um maluco feio ficando com uma mulher maravilhosa que ela é. Ganhei o meu dia, minha semana e meu mês só de ter ficado com ela. Fui embora de Uber também e acabei pagando 100 reais, mas nem liguei porque estava anestesiado por ter conseguido ficar com ela. E, obviamente, depois de 03 meses nos conhecendo, pedi para namorar com ela (sim, sou a emoção em pessoa). Estamos aí fazendo 1 ano, 1 mês e 15 dias. Para todo sempre, vou te amar. E se existirem outras vidas, pode ter certeza que vou te encontrar e vamos ser muito felizes. Com você, encontrei minha felicidade, meu motivo de sorrir, acordar e batalhar mais e mais para construirmos um império. Com você, me reencontrei, conheci o que é o amor, carinho, afeto e, mais importante, o respeito. A cada dia que passa, me torno um homem melhor só de estar ao seu lado. E, óbvio, sou falho, continuo aprendendo todos os dias com você. Eu te amo sem vírgulas e nem pontos finais.</p>
+        </section>
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery">
+                <div class="photo-container">
+                    <img src="IMG/Imagem do WhatsApp de 2024-05-20 à(s) 09.14.37_48a9003b.jpg" alt="Foto 1">
+                </div>
+                <div class="photo-container">
+                    <img src="IMG/Imagem do WhatsApp de 2024-05-20 à(s) 09.14.37_e1b1e629.jpg" alt="Foto 2">
+                </div>
+                <div class="photo-container">
+                    <img src="IMG/Imagem do WhatsApp de 2024-05-20 à(s) 09.14.37_f16bca9e.jpg" alt="Foto 3">
+                </div>
+                <!-- Adicione mais fotos conforme necessário -->
+            </div>
+        </section>
+        <section id="mensagens">
+            <h2>Mensagens de Amor</h2>
+            <article>
+                <h3>Para a minha Casca de Bala</h3>
+                <p>Relembrar nossa jornada é reviver momentos mágicos que tornam nossa história única. Desde o primeiro encontro, cada risada compartilhada e gesto gentil se tornaram parte do tecido do nosso amor. Você trouxe luz e felicidade à minha vida, e cada momento ao seu lado é um presente precioso que guardo com carinho. Prometo estar ao seu lado, enfrentando desafios e celebrando vitórias juntos. Você é minha inspiração, meu motivo de sorrir, e te amo mais do que palavras podem expressar.
+                <p>Luan</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;© 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
